@@ -5,7 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/css/reset.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link rel="stylesheet" href="./assets/css/style.css" />
         <title>Esercizio articolo mobile</title>
     </head>
@@ -16,9 +22,9 @@
             <h2>Il blog dei Developers</h2>
             <nav>
                 <ul>
-                    <a href="#"><li>&#8658 Home &#8656</li></a>
-                    <a href="#"><li>&#8658 Articoli &#8656</li></a>
-                    <a href="#"><li>&#8658 Lavora con noi &#8656</li></a> 
+                    <li><a href="#">&rArr; Home &lArr;</a></li>
+                    <li><a href="#">&rArr; Articoli &lArr;</a></li>
+                    <li><a href="#">&rArr; Lavora con noi &lArr;</a></li>
                 </ul>
             </nav>
         </header>
@@ -26,16 +32,22 @@
         <main>
             <article>
                 <h1>Come creare un template per i post</h1>
-                <p class="autore"><i class="fas fa-pen-square"></i> Di Mario Rossi - pubblicato il 25-10-2020</p>
-                <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</p>
+                <p class="autore"><i class="fas fa-pen-square"></i> Di Mario Rossi - <i class="fas fa-clock"></i> pubblicato il 25-10-2020</p>
+                <p>
+                    La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <span class="span">parti comuni</span> da applicare a
+                    tutte le pagine
+                </p>
                 <p>Le varie aree saranno quindi suddivise in:</p>
                 <ul>
-                    <li>Contenuti di intestazione del tag &#60;header&#62;</li>
-                    <li>Contenuti centrali variabili del tag &#60;main&#62; &#40;Corpo principale&#41;</li>
-                    <li>Contenuti di fine pagina comuni, da inserire nel tag &#60;main&#62;</li>
+                    <li>Contenuti di intestazione del tag <span class="tag">&#60;header&#62;</span></li>
+                    <li>Contenuti centrali variabili del tag <span class="tag">&#60;main&#62;</span> &#40;Corpo principale&#41;</li>
+                    <li>Contenuti di fine pagina comuni, da inserire nel tag <span class="tag">&#60;footer&#62;</span></li>
                 </ul>
-                <p>Formattazione del codice <br>
-                Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <span class="span">selezionare con i CSS</span>. Perciò i passi saranno:</p>
+                <p>
+                    Formattazione del codice <br />
+                    Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <span class="span">selezionare con i CSS</span>. Perciò i
+                    passi saranno:
+                </p>
                 <ol>
                     <li>Progettare il markup assegando ad ogni specifico testo il tag appropriato</li>
                     <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
@@ -96,26 +108,26 @@
                 <h3>Novità</h3>
                 <p>Vuoi rimanere aggiornato su altre novitò del blog? Iscriviti alla nostra newsletter:</p>
                 <form>
-                    <input type="email" name="e-mail" id="email" />
+                    <input type="email" name="e-mail" id="email" placeholder="inserisci l'email" />
                     <button type="submit">Iscriviti!</button>
                 </form>
             </section>
             <aside>
                 <h3>Articoli correlati</h3>
                 <div class="related-articles">
-                        <a href="#">Validare il codice HTML</a>
-                        <p><i class="fas fa-tag"></i> Categoria: develop</p>
-                        <p class="date"><i class="fas fa-calendar-alt"></i> Data: 18-9-2020</p>
+                    <a href="#">Validare il codice HTML</a>
+                    <p><i class="fas fa-tag"></i> Categoria: develop</p>
+                    <p class="date"><i class="fas fa-calendar-alt"></i> Data: 18-9-2020</p>
                 </div>
                 <div class="related-articles">
-                        <a href="#">Correggere la sintassi</a>
-                        <p><i class="fas fa-tag"></i> Categoria: develop</p>
-                        <p class="date"><i class="fas fa-calendar-alt"></i> Data: 16-9-2020</p>
+                    <a href="#">Correggere la sintassi</a>
+                    <p><i class="fas fa-tag"></i> Categoria: develop</p>
+                    <p class="date"><i class="fas fa-calendar-alt"></i> Data: 16-9-2020</p>
                 </div>
                 <div class="related-articles">
-                        <a href="#">Meno Kb nella pagina</a>
-                        <p><i class="fas fa-tag"></i> Categoria: ottimizzazione</p>
-                        <p class="date"><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</p>
+                    <a href="#">Meno Kb nella pagina</a>
+                    <p><i class="fas fa-tag"></i> Categoria: ottimizzazione</p>
+                    <p class="date"><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</p>
                 </div>
             </aside>
         </main>

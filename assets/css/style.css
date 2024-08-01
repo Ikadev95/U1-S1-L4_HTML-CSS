@@ -18,12 +18,16 @@ header{
     background: linear-gradient(180deg, rgba(1,154,195,1) 0%, rgba(10,109,136,1) 100%);
     text-align: center;
     padding: 32px 0;
+    -webkit-box-shadow: 5px 5px 6px -5px #000000; 
+    box-shadow: 5px 5px 6px -5px #000000;
 }
 main{
     width: 358px;
     background-color: white;
     padding: 16px 16px;
     margin: 16px;
+    -webkit-box-shadow: 5px 5px 6px -5px #000000; 
+    box-shadow: 5px 5px 6px -5px #000000;
 }
 h1{
     font-size: 32px;
@@ -36,6 +40,7 @@ h3{
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: 500;
 }
 p{
     margin-block: 16px;
@@ -78,24 +83,40 @@ table {
      }
 
 footer{
-    background: linear-gradient(180deg, rgba(1,154,195,1) 0%, rgba(10,109,136,1) 100%);
+    background: rgb(0,85,102);
+    background: linear-gradient(180deg, rgba(0,85,102,1) 0%, rgba(41,51,56,1) 100%);
     width: 358px;
     margin: 16px;
     color: white;
-    padding: 16px;
+    padding: 12px 16px;
     text-align: center;
+    -webkit-box-shadow: 5px 5px 6px -5px #000000; 
+    box-shadow: 5px 5px 6px -5px #000000;
+}
+ a{
+    color: #2BAECE;
+    font-weight: 600;
+}
+footer a{
+    color: #FF01FE;
+    font-weight: 600;
 }
 .related-articles{
     background-color: #E4E7E7;
-    padding: 24px 16px 16px 16px;
+    padding: 20px 16px 12px 16px;
     margin-block: 8px;
     border: 1px solid rgb(187, 186, 186);
 }
-.date{
+.related-articles p{
+    margin: 4px;
+}
+.related-articles p:last-of-type{
     text-align: right;
+    margin-top: 24px;
 }
 .span{
     color: #AA1F72;
+    font-weight: 500;
 }
 input{
     border: 0px;
@@ -122,9 +143,6 @@ section{
 form{
     display: block;
 }
-.related-articles a{
-    color: #AA1F72;
-}
 main ul li{
     list-style-type:initial;
     line-height: 1.2em;
@@ -133,7 +151,7 @@ main ul li{
 }
 ol li{
     list-style-type:decimal;
-    line-height: 1.2em;
+    line-height: 1.3em;
     margin-bottom: 4px;
 }
 main ul{
@@ -143,5 +161,25 @@ ol{
     padding-left: 24px;
 }
 .autore{
-    color: #c2c5c5;
+    color: #b2b5b5;
+}
+iframe{
+    border-radius: 24px;
+}
+table caption{
+    font-style: italic;
+    font-weight: 500;
+    margin-block: 4px;
+}
+table{
+    border-bottom: #3366CB 2px solid;
+}
+.tag{
+    background-color: #e1e1e1;
+    border-radius: 6px;
+    border: 1px solid rgb(159, 159, 159);
+    display: inline-block;
+    margin-top: 8px;
+    padding-block: 2px;
+
 }
