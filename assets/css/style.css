@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
 *{
-    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
 html, body{
@@ -9,6 +8,7 @@ html, body{
     background-image: url("../img/sfondo.png") ;
     background-repeat: repeat-y;
     background-position: center;
+    font-family: "Poppins", sans-serif;
 }
 header{
     width: 358px;
@@ -17,7 +17,7 @@ header{
     text-transform: uppercase;
     background: linear-gradient(180deg, rgba(1,154,195,1) 0%, rgba(10,109,136,1) 100%);
     text-align: center;
-    padding: 24px 0;
+    padding: 32px 0;
 }
 main{
     width: 358px;
@@ -30,6 +30,12 @@ h1{
     margin-block: 16px;
     line-height: 1.3em;
     font-weight: 500;
+}
+h3{
+    margin-block: 16px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
 }
 p{
     margin-block: 16px;
@@ -52,10 +58,19 @@ header img{
     width: 200px;
     margin: 0 auto;
 }
-td, th {
-    border: 1px solid #dddddd;
+tr:nth-last-of-type(2n){
+    background-color: #E4E7E7;
+}
+td {
     text-align: left;
-    padding: 10px 15px;
+    padding: 16px 16px;
+    }
+   th {
+        background-color: #356EBB ;
+        justify-content: baseline;
+        padding: 10px 15px;
+        color: white;
+        line-height: 1.4em;
         }
 table {
     border-collapse: collapse;
@@ -68,4 +83,65 @@ footer{
     margin: 16px;
     color: white;
     padding: 16px;
+    text-align: center;
+}
+.related-articles{
+    background-color: #E4E7E7;
+    padding: 24px 16px 16px 16px;
+    margin-block: 8px;
+    border: 1px solid rgb(187, 186, 186);
+}
+.date{
+    text-align: right;
+}
+.span{
+    color: #AA1F72;
+}
+input{
+    border: 0px;
+    padding: 4px;
+    width: 70%;
+    height: 32px;
+    border-bottom: 2px dashed grey;
+}
+button{
+    width: 28%;
+    height: 32px;
+    background-color: #3366CB;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 16px;
+}
+section{
+    background-color: #E4E7E7;
+    padding: 8px 16px;
+    padding-bottom: 32px;
+    margin-top: 16px;
+}
+form{
+    display: block;
+}
+.related-articles a{
+    color: #AA1F72;
+}
+main ul li{
+    list-style-type:initial;
+    line-height: 1.2em;
+    margin-bottom: 4px;
+
+}
+ol li{
+    list-style-type:decimal;
+    line-height: 1.2em;
+    margin-bottom: 4px;
+}
+main ul{
+    padding-left: 24px;
+}
+ol{
+    padding-left: 24px;
+}
+.autore{
+    color: #c2c5c5;
 }

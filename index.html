@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./assets/css/reset.css" />
-        <link rel="stylesheet" href="./assets/css/font-awesome.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./assets/css/style.css" />
         <title>Esercizio articolo mobile</title>
     </head>
@@ -26,16 +26,16 @@
         <main>
             <article>
                 <h1>Come creare un template per i post</h1>
-                <p>Di Mario Rossi - pubblicato il 25-10-2020</p>
+                <p class="autore"><i class="fas fa-pen-square"></i> Di Mario Rossi - pubblicato il 25-10-2020</p>
                 <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</p>
-                <p>Le varie aree saranno quindi suddivise in :</p>
+                <p>Le varie aree saranno quindi suddivise in:</p>
                 <ul>
                     <li>Contenuti di intestazione del tag &#60;header&#62;</li>
                     <li>Contenuti centrali variabili del tag &#60;main&#62; &#40;Corpo principale&#41;</li>
                     <li>Contenuti di fine pagina comuni, da inserire nel tag &#60;main&#62;</li>
                 </ul>
-                <h3>Formattazione del codice</h3>
-                <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:</p>
+                <p>Formattazione del codice <br>
+                Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <span class="span">selezionare con i CSS</span>. Perciò i passi saranno:</p>
                 <ol>
                     <li>Progettare il markup assegando ad ogni specifico testo il tag appropriato</li>
                     <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
@@ -83,7 +83,7 @@
                 </p>
                 <iframe
                     width="326"
-                    height="315"
+                    height="200"
                     src="https://www.youtube.com/embed/Jqz-OyVQBJ8?si=r4Wt3z4PPIq6Inrj"
                     title="YouTube video player"
                     frameborder="0"
@@ -92,38 +92,32 @@
                     allowfullscreen
                 ></iframe>
             </article>
-            <aside>
-                <h3>Articoli correlati</h3>
-                <div>
-                    <ul>
-                        <li>Validare il codice HTML</li>
-                        <li>Categoria: develop</li>
-                        <li>Data:18-9-2020</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>Correggere la sintassi</li>
-                        <li>Categoria: develop</li>
-                        <li>Data:16-9-2020</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>Meno Kb nella pagina</li>
-                        <li>Categoria: ottimizzazione</li>
-                        <li>Data:30-9-2020</li>
-                    </ul>
-                </div>
-            </aside>
             <section>
+                <h3>Novità</h3>
                 <p>Vuoi rimanere aggiornato su altre novitò del blog? Iscriviti alla nostra newsletter:</p>
                 <form>
-                    <label for="email">Inserisci l'email</label>
                     <input type="email" name="e-mail" id="email" />
                     <button type="submit">Iscriviti!</button>
                 </form>
             </section>
+            <aside>
+                <h3>Articoli correlati</h3>
+                <div class="related-articles">
+                        <a href="#">Validare il codice HTML</a>
+                        <p><i class="fas fa-tag"></i> Categoria: develop</p>
+                        <p class="date"><i class="fas fa-calendar-alt"></i> Data: 18-9-2020</p>
+                </div>
+                <div class="related-articles">
+                        <a href="#">Correggere la sintassi</a>
+                        <p><i class="fas fa-tag"></i> Categoria: develop</p>
+                        <p class="date"><i class="fas fa-calendar-alt"></i> Data: 16-9-2020</p>
+                </div>
+                <div class="related-articles">
+                        <a href="#">Meno Kb nella pagina</a>
+                        <p><i class="fas fa-tag"></i> Categoria: ottimizzazione</p>
+                        <p class="date"><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</p>
+                </div>
+            </aside>
         </main>
         <footer>
             <p>Blog Epicode &#64;2023</p>
