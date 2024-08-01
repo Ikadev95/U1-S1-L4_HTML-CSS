@@ -3,24 +3,53 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
-body{
+html, body{
     width: 390px;
+    margin: 0 auto;
+    background-image: url("../img/sfondo.png") ;
+    background-repeat: repeat-y;
+    background-position: center;
 }
 header{
-    width: 100%;
+    width: 358px;
     margin: 16px;
     color: white;
     text-transform: uppercase;
     background: linear-gradient(180deg, rgba(1,154,195,1) 0%, rgba(10,109,136,1) 100%);
+    text-align: center;
+    padding: 24px 0;
 }
 main{
-    width: 100%;
+    width: 358px;
+    background-color: white;
+    padding: 16px 16px;
     margin: 16px;
+}
+h1{
+    font-size: 32px;
+    margin-block: 16px;
+    line-height: 1.3em;
+    font-weight: 500;
+}
+p{
+    margin-block: 16px;
+    line-height: 1.4em;
+}
+header a{
+    color: white;
+    text-decoration: none;
+
+}
+header h2{
+    margin-block: 20px;
+    font-family: "Poppins", sans-serif;
+}
+header li{
+    margin-block: 10px;
+    font-family: "Poppins", sans-serif;
 }
 header img{
     width: 200px;
-}
-img{
     margin: 0 auto;
 }
 td, th {
@@ -32,3 +61,11 @@ table {
     border-collapse: collapse;
     width: 100%;
      }
+
+footer{
+    background: linear-gradient(180deg, rgba(1,154,195,1) 0%, rgba(10,109,136,1) 100%);
+    width: 358px;
+    margin: 16px;
+    color: white;
+    padding: 16px;
+}
